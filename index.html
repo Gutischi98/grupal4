@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_awakelab_transparente.png"
+      type="image/x-icon"
+    />
+
+    <title>ACTIVIDAD GRUPAL 4 - MÓDULO 3</title>
+  </head>
+
+  <body>
+    <div class="div_nav">
+      <nav class="navbar bg-dark bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/img/logo_awakelab_transparente.png"
+              alt="Logo"
+              height="30"
+              class="d-inline-block align-text-top me-4"
+            />
+            ACTIVIDAD GRUPAL 4 - MODULO 3
+          </a>
+        </div>
+      </nav>
+      <!-- fin del navbar bootstrap -->
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 ">
+          <h3>Ingrese su fecha de nacimiento</h3>
+          <!-- <form> -->
+          <div class=" mb-3">
+            <label for="fecha" class="form-label">Fecha:</label>
+            <input type="text" class="form-control" id="fecha" name="fecha" />
+            <button type="button" id="boton1" class="btn btn-dark mt-2">Obtener día de la semana</button>
+            <br />
+            <p id="resultado"></p>
+          </div>
+
+          <div class=" mb-3">
+            <h3>Periodo laboral</h3>
+            <label for="fechaInicial" class="form-label"
+              >Fecha de ingreso:</label
+            >
+            <input type="date" id="fechaInicial" class="form-control" />
+            <br />
+            <label for="fechaTermino" class="form-label"
+              >Fecha de termino:</label
+            >
+            <input type="date" id="fechaTermino" class="form-control" />
+
+            <button type="button" id="tiempoTrabajado" class="btn btn-dark mt-2 ">
+              Calcular tiempo Total
+            </button>
+          </div>
+
+          <div class="">
+            <h3>Horas trabajadas</h3>
+            <label for="horaIngreso" class="form-label"
+              >Fecha y hora de ingreso:</label
+            >
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="horaIngreso"
+            />
+          </div>
+          <div class=" mb-3">
+            <label for="horaSalida" class="form-label"
+              >Fecha y hora de salida:</label
+            >
+            <input type="datetime-local" id="horaSalida" class="form-control" />
+            <button type="button" id="horatrabajo" class="btn btn-dark mt-2">Enviar</button>
+          </div>
+
+          <div id="resultado"></div>
+          <!-- inicio form horas trabajadas -->
+          <!-- <form> -->
+
+          <button type="button" id="boton4" class="btn btn-dark ">Obtener horas trabajadas</button>
+          <br />
+        </div>
+        <div class="col">
+
+          <!-- AQUI VA JESU -->
+          <img src="./assets/img/35eRLsx.gif" alt="jesuvacile">
+
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- inicio footer -->
+    <div
+      class="div-footer bg-body-tertiary bg-dark container-fluid fixed-bottom"
+      data-bs-theme="dark"
+    >
+      <footer class="text-light">
+        <p class="d-flex justify-content-center">
+          todos los derechos reservados ® | 2023 |
+        </p>
+        <span class="d-flex justify-content-center"
+          >Claudio Cabrera - Carolina Saez Redital - Gustavo Solar - Guillermo
+          Malvoa - Carlos Beltrán</span
+        >
+      </footer>
+    </div>
+    <!-- fin footer -->
+
+    <script type="module" src="./assets/js/app.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
