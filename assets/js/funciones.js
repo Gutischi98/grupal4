@@ -42,29 +42,23 @@ function cumple() {
     let hoy = new Date();
     let anioActual = hoy.getFullYear();
 
-    let fechaCum = new Date(`${fechaNacimiento.getMonth()+1}/${fechaNacimiento.getDate()+1}/${anioActual}`)
+    let fechaCum = new Date(`${fechaNacimiento.getMonth() + 1}/${fechaNacimiento.getDate() + 1}/${anioActual}`)
 
 
     if (fechaCum < hoy) {
         fechaCum.setFullYear(anioActual + 1);
     }
-    
-    let difTiempo = fechaCum.getTime() - hoy.getTime();
-    let difDias = Math.ceil(difTiempo / (1000 * 3600 * 24));
-    
-    if (fechaCum.getMonth() === hoy.getMonth() && fechaCum.getDate() === hoy.getDate()) {
-        console.log("Feliz cum");
 
-    } else if (fechaCum < hoy) {
-        fechaCum.setFullYear(anioActual + 1);
-        let tiempoDif = fechaCum.getTime() - hoy.getTime();
-        let diasDif = Math.ceil(tiempoDif / (1000 * 3600 * 24));
-        console.log(diasDif)
+    let difTiempo = fechaCum.getTime() - hoy.getTime();
+    //let difDias = Math.ceil(difTiempo / (1000 * 3600 * 24));
+
+    if (fechaCum.getMonth() === hoy.getMonth() && fechaCum.getDate() === hoy.getDate()) {
+        alert("Feliz cum");
 
     } else {
         let tiempoDif = fechaCum.getTime() - hoy.getTime();
         let diasDif = Math.ceil(tiempoDif / (1000 * 3600 * 24));
-        console.log(diasDif);
+        alert(`Quedan ${diasDif} dias pa tu cumple`);
     }
 
 
