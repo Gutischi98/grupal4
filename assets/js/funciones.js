@@ -1,20 +1,3 @@
-// japi verdei
-// function obtenerDiaSemana() {
-//     let fechaStr = document.getElementById("fecha").value;
-//     let fechaArr = fechaStr.split('-');
-//     let fecha = new Date(`${fechaArr[2]}-${fechaArr[1]}-${fechaArr[0]}`)
-//     // let fecha = new Date(document.getElementById("fecha").value);
-//     let dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
-//     let diaSemana = dias[fecha.getDay()];
-//     let mensaje = "El día que nació fue: " + diaSemana;
-//     document.getElementById("resultado").innerHTML = mensaje;
-//     console.log(mensaje);
-//     return fecha
-// }
-
-
-
-// Retornar edad total.
 
 
 function obtenerDiaSemana() {
@@ -33,6 +16,7 @@ function obtenerDiaSemana() {
     let mensaje = "El día que nació fue: " + diaSemana + ". Su edad es: " + anios + " años y " + meses + " meses y " + dias + " días.";
     document.getElementById("resultado").innerHTML = mensaje;
     return fechaNacimiento;
+
 }
 
 function cumple() {
@@ -67,7 +51,6 @@ function cumple() {
         console.log(diasDif);
     }
 
-
 }
 
 
@@ -91,6 +74,7 @@ const formateaFecha = (event) => {
     }
     // asignamos la nueva fecha formateada al input
     event.target.value = fecha;
+
 };
 
 
@@ -137,7 +121,6 @@ function tiempoTrabajado() {
         alert(`Faltan ${tiempoRestanteDias} días para completar el año de trabajo en la organización.`)
 
     }
-
 
 }
 
@@ -192,6 +175,7 @@ function obtenerTotalHorasTrabajadas() {
 
     alert(`La cantidad total de horas trabajadas por los 8 colaboradores es: ${totalHoras.toFixed(2)} horas`);
     console.log(mensaje)
+
 }
 
 
